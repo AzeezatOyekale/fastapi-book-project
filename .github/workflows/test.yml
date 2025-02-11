@@ -16,8 +16,11 @@ jobs:
         with: 
           python-version: 3.12
       - name: initiating pytest
-        run: |
+        run: | 
+          python -m venv venv
           source venv/bin/activate
+          pip install -r requirements.txt
+          pip install pytest
           pytest
 
       - name: Set build status to success
