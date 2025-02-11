@@ -2,10 +2,10 @@
 FROM python:3.12
 
 # Set the working directory inside the container
-WORKDIR /app
+WORKDIR /app/
 
 # Copy the requirements file
-COPY requirements.txt
+COPY requirements.txt /app/
 
 # Set up a virtual environment and activate
 # python -m venv venv
