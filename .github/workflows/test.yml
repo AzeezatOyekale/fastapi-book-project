@@ -16,7 +16,8 @@ jobs:
         with: 
           python-version: 3.12
       - name: initiating pytest
-        run: |
+        run: | 
+          python -m venv venv
           source venv/bin/activate
           pytest
 
